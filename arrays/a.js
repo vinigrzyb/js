@@ -15,7 +15,7 @@ function newString(string){
     arr.forEach(i => {
         a.push(upCase(i));
     });
-    console.log(a.join(" "))
+    console.log(a.join(" "));
 }
 newString(input);
 
