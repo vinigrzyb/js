@@ -4,7 +4,10 @@ const estudante = {
     cpf: '12345678910',
     turma: 'java',
     media: 7.5,
-    aprovado: (mediaBase) => this.media >= mediaBase ? true : false;
+    aprovado: function(mediaBase){
+        return this.media >= mediaBase ? true : false
+        //o método 'this' não funciona com arrow function
+    }
 }
 
-console.log(estudante.aprovado(8))
+console.log(estudante.aprovado(7))
