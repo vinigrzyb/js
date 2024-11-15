@@ -22,7 +22,7 @@ function mostraDados(obj){
         const tipo = typeof(obj[i]);
         if(tipo !== 'object' && tipo !== 'function'){
             let text = `A chave ${i} tem o valor ${obj[i]}`;
-            console.log(text);
+            console.log(text);   
         }
     }
 }
